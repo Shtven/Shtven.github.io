@@ -1,0 +1,8 @@
+<div *ngFor="let job of workExperience" style="margin-bottom: 1.2rem; border-left: 4px solid #2196F3; padding-left: 1rem; background: #f9f9f9; border-radius: 6px;">
+  <p style="margin: 0;">
+    <strong>{{ job.startDate }} – {{ job.endDate }}</strong>
+    <i style="color: #666;">({{ job.location }})</i>
+  </p>
+  <p style="margin: 0.2rem 0;"><strong>{{ job.position }}</strong> - {{ job.company }}</p>
+  <p><strong>Logros:</strong> {{ job.accomplishments }}</p>
+</div>
