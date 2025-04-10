@@ -1,0 +1,16 @@
+<tr style="background-color: #f0f0f0;">
+  <td style="padding: 1.5rem;">
+    <h2 style="margin: 0; font-size: 1.8rem; color: #333;">{{ header.name }}</h2>
+    <p style="font-style: italic; color: #666;">{{ header.goalLife }}</p>
+  </td>
+  <td style="text-align: center;">
+    <img src="{{ header.photoUrl }}" alt="Foto"
+         style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid #ccc;">
+  </td>
+  <td style="padding: 1.5rem;">
+    <p><strong>Email:</strong> {{ header.email }}</p>
+    <p><strong>Tel:</strong> {{ header.phoneNumber }}</p>
+    <p><strong>Ubicación:</strong> {{ header.location }}</p>
+    <p><strong>Red social:</strong> <a href="#">{{ header.socialNetwork }}</a></p>
+  </td>
+</tr>
