@@ -1,20 +1,56 @@
-<table border="1">
- <tr>
-   <td colspan="2"><app-header></app-header>
-   </td>
- </tr>
- <tr>
-     <td> <app-work-experience></app-work-experience> </td>
-     <td> <app-skills></app-skills> </td>
- </tr>
+<div style="max-width: 900px; margin: 0 auto; overflow-x: auto;">
+  <table style="width: 100%; table-layout: fixed; font-family: 'Segoe UI', sans-serif; border-collapse: collapse;">
 
- <tr>
-   <td> <app-education></app-education> </td>
-   <td> <app-certificates></app-certificates> </td>
- </tr>
+    <!-- Header -->
+    <tr>
+      <td colspan="3" style="padding: 1rem;">
+        <div style="background: #f0f0f0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);">
+          <app-header></app-header>
+        </div>
+      </td>
+    </tr>
+    
+    <!-- Work Experience + Skills -->
+    <tr>
+      <td style="width: 45%; padding: 1rem; vertical-align: top;">
+        <div style="background: #ffffff; border-radius: 8px; padding: 1rem; height: 100%; box-shadow: 0 0 8px rgba(0,0,0,0.05);">
+          <app-work-experience></app-work-experience>
+        </div>
+      </td>
+      <td colspan="2" style="width: 55%; padding: 1rem;">
+        <div style="background: #ffffff; border-radius: 8px; padding: 1rem; height: 100%; box-shadow: 0 0 8px rgba(0,0,0,0.05);">
+          <app-skills></app-skills>
+        </div>
+      </td>
+    </tr>
 
- <tr>
-   <td> <app-languages></app-languages> </td>
-   <td> <app-interests></app-interests> </td>
- </tr>
-</table>
+    <!-- Education + Certificates -->
+    <tr>
+      <td style="width: 50%; padding: 1rem; vertical-align: top;">
+        <div style="background: #f0f8ff; border-radius: 8px; padding: 1rem;">
+          <app-education></app-education>
+        </div>
+      </td>
+      <td colspan="2" style="width: 50%; padding: 1rem;">
+        <div style="background: #e8f5e9; border-radius: 8px; padding: 1rem;">
+          <app-certificates></app-certificates>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Languages + Interests -->
+    <tr>
+      <td style="padding: 1rem;">
+        <div style="background: #fff3e0; border-radius: 8px; padding: 1rem;">
+          <app-languages></app-languages>
+        </div>
+      </td>
+      <td colspan="2" style="padding: 1rem;">
+        <div style="background: #ede7f6; border-radius: 8px; padding: 1rem;">
+          <app-interests></app-interests>
+        </div>
+      </td>
+    </tr>
+
+  </table>
+</div>
