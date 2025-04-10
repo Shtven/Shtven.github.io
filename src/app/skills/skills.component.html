@@ -1,1 +1,9 @@
-<p>skills works!</p>
+<div *ngFor="let job of skills" style="margin-bottom: 1rem;">
+  <p style="margin: 0 0 0.3rem 0;">• {{ job.skill }}
+    <span style="float: right; font-style: italic;">{{ job.porcentage }}%</span>
+  </p>
+  <div style="height: 8px; background: #ddd; border-radius: 4px;">
+    <div style="height: 8px; background: #4caf50; border-radius: 4px;" [style.width.%]="job.porcentage"></div>
+
+  </div>
+</div>
